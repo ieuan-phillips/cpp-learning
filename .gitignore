@@ -1,0 +1,24 @@
+# Build output
+build/
+out/
+cmake-build-*/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Compiled files
+*.exe
+*.obj
+*.o
+*.pdb
+*.ilk
+
+# Temporary files
+*.tmp
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
