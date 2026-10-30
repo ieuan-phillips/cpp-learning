@@ -39,11 +39,35 @@ These are areas I'm studying, not claims of professional-level proficiency.
 
 Some files may contain imperfect or early-stage solutions. I'm keeping them as a record of my learning rather than presenting every exercise as production-quality code.
 
+## Development environment and workflow
+
+I primarily work through my C++ studies on a laptop running **Omarchy (Arch Linux-based)**, using a terminal-driven development environment.
+
+- **Editor:** Neovim with LazyVim
+- **Terminal:** tmux
+- **Compiler:** GCC (`g++`), targeting C++23
+- **Version control:** Git through the command line
+- **Operating system:** Linux (Omarchy)
+
+I write, compile, run and debug exercises from the terminal, using Git to track my progress and push completed work to GitHub.
+
+Alongside learning C++, I'm deliberately working to improve my Linux proficiency, Vim motions, shell usage and understanding of the compilation process.
+
+I also use **Windows and Visual Studio** when appropriate, particularly for game development projects.
+
 ## Building and running exercises
 
-This is a collection of small programs, **not one application with a single build command**. Many exercises have their own `main()` function and should be compiled separately.
+This repository contains individual C++ programs rather than a single application. Most exercises have their own `main()` function and are compiled separately.
 
-I primarily use Visual Studio for local C++ development. To run an exercise, open or add the relevant `.cpp` file to a suitable C++ console project, configure any supporting files it needs, and build that program on its own. Compiler settings and dependencies may differ between exercises.
+For a standalone exercise, a typical compilation command is:
+
+`g++ -std=c++23 -Wall -Wextra -Wpedantic exercise.cpp -o exercise`
+
+Followed by:
+
+`./exercise`
+
+Some exercises require additional headers or support files provided with the textbook and in the *support/* folder of *ppp3/*, so compilation options may vary.
 
 ## Learning resources and attribution
 
@@ -54,4 +78,4 @@ The exercises are based on these educational resources. The solutions here docum
 
 ## Related project
 
-- [C Bullet Hell](https://github.com/ieuan-phillips/c-bullet-hell) — a tutorial-guided game built in C with raylib, followed by debugging and gameplay improvements.
+- [C Bullet Hell](https://github.com/ieuan-phillips/c-bullet-hell) - a tutorial-guided game built in C with raylib, followed by debugging and gameplay improvements.
