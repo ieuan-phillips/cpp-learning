@@ -3,7 +3,8 @@
 int main()
 // Commenting out drill code, fixed code is uncommented below drill code.
   try {
-    string s = "ape"; if (s+"fool") cout < "Success!\n";
+    // string s = "ape"; if (s+"fool") cout < "Success!\n";
+    string s = "ape"; if (s<"fool") cout << "Success!\n";
     return 0;
   }
   catch (exception& e) {
